@@ -1,0 +1,868 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* local fonts */
+
+@font-face {
+  font-family: "Filson Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Regular"),
+    url("../fonts/FilsonProRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Regular Italic"),
+    url("../fonts/FilsonProRegularItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Thin"),
+    url("../fonts/FilsonProThin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Thin Italic"),
+    url("../fonts/FilsonProThinItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Light"),
+    url("../fonts/FilsonProLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Light Italic"),
+    url("../fonts/FilsonProLightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Book"),
+    url("../fonts/FilsonProBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Book Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Book Italic"),
+    url("../fonts/FilsonProBookItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Medium"),
+    url("../fonts/FilsonProMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Medium Italic"),
+    url("../fonts/FilsonProMediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Bold"),
+    url("../fonts/FilsonProBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Bold Italic"),
+    url("../fonts/FilsonProBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Heavy"),
+    url("../fonts/FilsonProHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Heavy Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Heavy Italic"),
+    url("../fonts/FilsonProHeavyItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Black"),
+    url("../fonts/FilsonProBlack.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Filson Pro Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Filson Pro Black Italic"),
+    url("../fonts/FilsonProBlackItalic.woff") format("woff");
+}
+
+/* Global css */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  background: #fff;
+  color: #1d1d25;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button,
+img,
+input {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #fff;
+  outline: 0;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  outline: 0 !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  display: inline-block;
+}
+
+/* button style  */
+.btn {
+  padding: 18px 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 150px;
+  border-width: 2px;
+}
+
+@media (max-width: 1199px) {
+  .btn {
+    font-size: 15px !important;
+  }
+}
+
+/* faceki section  */
+
+@media screen and (max-width: 767px) {
+  .faceki-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* faceki card style start */
+.faceki-card {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+.faceki-card-dark {
+  padding: 30px;
+  border: 1px solid #707070;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+  .faceki-card-dark {
+    border: 1px solid #fff;
+  }
+}
+
+.faceki-card-dark .faceki-card__title {
+  font-family: "Filson Pro";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #464c5f;
+  margin-bottom: 30px;
+}
+.faceki-card-dark .faceki-card__sub-title {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  color: #464c5f;
+  margin-bottom: 30px;
+}
+
+.faceki-card__item {
+  font-family: "Filson Pro";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  color: #464c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.faceki-card__item:last-child {
+  margin-bottom: 0;
+}
+.faceki-card__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: #464c5f;
+  font-family: "Filson Pro";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.id-card-logo {
+  width: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .id-card-logo {
+    width: 45px;
+  }
+}
+
+.faceki-card__btn {
+  font-family: "Filson Pro";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  padding: 6px 35px;
+  background: #464c5f;
+  border: 1px solid #464c5f;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+
+.faceki-card__btn:hover {
+  background: transparent;
+  color: #464c5f;
+}
+/* faceki card style end */
+
+.faceki-card-light {
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .faceki-card-light {
+    border-radius: 0px;
+    height: 100%;
+  }
+}
+
+.faceki-card-light .faceki-card__title {
+  font-family: "Filson Pro";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.faceki-card-light .faceki-card__sub-title {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.faceki-card-light .faceki-card__item {
+  color: #fff;
+}
+
+.faceki-card-light p {
+  color: #fff;
+  font-size: 11px;
+  margin: 10px 0px;
+}
+
+/* camera wrap  style start*/
+
+.camera-btn {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.camera-btn svg {
+  width: 85px;
+}
+
+.flip-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flip-btn {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.flip-text {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+/* camera wrap  style end*/
+
+/* Readability section style start */
+
+.faceki-btn-outline-light {
+  font-family: "Filson Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  padding: 6px 25px;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 10px 10px;
+}
+
+.faceki-btn-outline-light:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #464c5f;
+}
+.faceki-btn-light {
+  font-family: "Filson Pro";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #464c5f;
+  padding: 6px 25px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin: 10px 10px;
+}
+.faceki-btn-light:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* Readability section style end */
+
+/* selfie camera style start */
+
+.selfie-btn {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 10px;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .selfie-btn {
+    bottom: calc(25% - 30px);
+  }
+}
+
+/* selfie camera style end */
+
+/*  success card style start */
+.success__card {
+  padding: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .success__card {
+    padding: 30px 15px;
+  }
+}
+
+.success__card .faceki-card__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #9ea0ae;
+}
+
+.extra-information {
+  font-size: 11px;
+}
+/*  success card style end */
+
+/*  form syle start */
+.form__card {
+  text-align: left;
+}
+.form__card .faceki-card__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #9ea0ae;
+}
+.form-label {
+  font-family: Lato;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: rgb(40, 42, 59, 0.7);
+  line-height: 1;
+}
+
+.form-control {
+  font-family: Lato;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  height: 45px;
+  border-radius: 7px;
+  background: #fff;
+  border: 1px solid rgb(39, 41, 58, 0.4);
+}
+
+.form-control:focus {
+  border-color: rgb(39, 41, 58, 0.4);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-btn {
+  background: #464c5f;
+  border: 1px solid #464c5f;
+  padding: 14px 15px;
+  display: block;
+  width: 100%;
+  font-family: "Filson Pro";
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.form-btn:hover {
+  background: transparent;
+  border: 1px solid rgb(39, 41, 58, 0.4);
+  color: #464c5f;
+}
+/*  form syle end */
+
+.video-idcard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -3;
+}
+
+.video-selfie {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+#message-1 {
+  color: #464c5f;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  #message-1 {
+    margin-top: 0;
+  }
+}
+
+#loader {
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.loader-text {
+  right: 0;
+  left: 2px;
+  position: absolute;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 11px;
+  bottom: 18px;
+  z-index: 56;
+  line-height: 1;
+}
+
+/* camera-screen-android */
+
+.camera-screen-android {
+  width: 100%;
+  height: 100%;
+}
+
+.camera-content-top {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.camera-content-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.camera-content-bottom.camera-content-bottom-read {
+  bottom: 30px;
+}
+@media screen and (max-width: 991px) {
+  .camera-content-top {
+    top: 20px;
+  }
+
+  .camera-content-bottom {
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .camera-content-top {
+    top: calc(10% - 20px);
+  }
+
+  .camera-content-bottom {
+    bottom: calc(25% - 30px);
+  }
+
+  .camera-content-bottom.camera-content-bottom-read {
+    bottom: calc(30% - 35px);
+  }
+}
+
+.pattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.selfie-content-bottom {
+  position: absolute;
+  bottom: calc(20% - 40px);
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.slfie-screen {
+  width: 100%;
+  height: 100%;
+}
+/* new css */
+
+.output {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+#photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#camera,
+#result,
+#id_back_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+#result {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+#id_back_part {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+
+#retake-button2 {
+  display: none;
+}
+
+#message-1 {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .camera-holder {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .camera-holder {
+    max-width: 713px;
+    max-height: 500px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 500px;
+    margin-top: 100px;
+    //margin-bottom: 200px;
+  }
+}
+
+
+
+#startbutton3 {
+  display: none;
+}
+
+#camera-screen-mobile {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#camera-screen-mobile3 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#camera-screen-mobile2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#mobile-selfie {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+/* #desktop-selfie{
+  position: relative;
+}
+#desktop-selfie::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: rgb(113, 111, 111,0.5);
+  z-index: 1;
+}
+
+.camera-holder{
+  position: relative;
+  z-index: 3;
+} */
