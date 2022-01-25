@@ -63,6 +63,8 @@ var is_mobile_device = false;
         var confirm2 = document.getElementById('backpartbutton2');
         var mediaStream = null;
 
+        var doc_one_front_icon=sessionStorage.getItem("doc_one_front_icon");
+        document.querySelector('.faceki-card__img').src = 'public/assets/img/user-info/'+doc_one_front_icon;
         var doc_type_one=sessionStorage.getItem("doc_type_one");
         document.querySelector('.faceki-card__title').textContent = 'Scan your '+doc_type_one;
         // Prefer camera resolution nearest to 1280x720.
@@ -314,25 +316,35 @@ var is_mobile_device = false;
                    //alert(1);
                 }else if(back_img=='' || back_img==null){
                    //alert(2);
-                   document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-back-light.png';
+                   var doc_one_back_icon=sessionStorage.getItem("doc_one_back_icon");
+                   document.querySelector('.faceki-card__img').src = 'public/assets/img/user-info/'+doc_one_back_icon;
+                   //document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-back-light.png';
                    document.querySelector('.title').textContent = 'BACK SIDE';
                 }else if(front_img_two=='' || front_img_two==null){
                    //alert(3);
-                   document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-front-light.png';
+                   var doc_two_front_icon=sessionStorage.getItem("doc_two_front_icon");
+                   document.querySelector('.faceki-card__img').src = 'public/assets/img/user-info/'+doc_two_front_icon;
+                   //document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-front-light.png';
                    document.querySelector('.faceki-card__title').textContent = 'Scan your '+doc_type_two;
                    document.querySelector('.title').textContent = 'FRONT SIDE';
                 }else if(back_img_two=='' || back_img_two==null){
                    //alert(4);
-                   document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-back-light.png';
+                   var doc_two_back_icon=sessionStorage.getItem("doc_two_back_icon");
+                   document.querySelector('.faceki-card__img').src = 'public/assets/img/user-info/'+doc_two_back_icon;
+                   //document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-back-light.png';
                    document.querySelector('.title').textContent = 'BACK SIDE';
                 }else if(front_img_three=='' || front_img_three==null){
                    //alert(5);
-                   document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-front-light.png';
+                   var doc_three_front_icon=sessionStorage.getItem("doc_three_front_icon");
+                   document.querySelector('.faceki-card__img').src = 'public/assets/img/user-info/'+doc_three_front_icon;
+                   //document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-front-light.png';
                    document.querySelector('.faceki-card__title').textContent = 'Scan your '+doc_type_three;
                    document.querySelector('.title').textContent = 'FRONT SIDE';
                 }else{
                    //alert(6);
-                   document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-back-light.png';
+                   var doc_three_back_icon=sessionStorage.getItem("doc_three_back_icon");
+                   document.querySelector('.faceki-card__img').src = 'public/assets/img/user-info/'+doc_three_back_icon;
+                   //document.querySelector('.faceki-card__img').src = 'assets/img/user-info/id-back-light.png';
                    document.querySelector('.title').textContent = 'BACK SIDE';
                 }
 

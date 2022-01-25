@@ -450,14 +450,14 @@
                                 successfullpage.style.display = "block";
                                 location.href = "#successfullpage";
                                 setTimeout(function(){ 
-                                    window.location.href=baseUrl+newPath;
+                                    window.location.href=success_redirect_url;
                                 }, 5000);
                             }else if(resp.status=='Decliend'){
                                 verifypage.style.opacity = 0;
                                 extrapage.style.display = "block";
                                 location.href = "#extrapage";
                                 setTimeout(function(){ 
-                                    window.location.href=baseUrl+newPath;
+                                    window.location.href=declined_redirect_url;
                                 }, 5000);
                             }else{
                                  window.location.href=baseUrl+newPath+"/idscaner";
